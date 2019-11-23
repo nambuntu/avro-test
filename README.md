@@ -2,7 +2,15 @@
 Just some simple code demonstrate how to use avro format to serialize and deserialize data with schema.
 Following this docs: [http://avro.apache.org/docs/current/](http://avro.apache.org/docs/current/)
 
-```java 
+To run the sample:
+```bash
+mvn compile
+mvn exec:java
+```
+
+Sample main code
+
+```java
 import example.avro.User;
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +21,7 @@ import org.apache.avro.io.DatumWriter;
 import org.apache.avro.specific.SpecificDatumReader;
 import org.apache.avro.specific.SpecificDatumWriter;
 
-public class Main
+public class SpecificMain
 {
     public static void main(String[] args) throws IOException
     {
